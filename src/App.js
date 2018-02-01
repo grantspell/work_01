@@ -19,7 +19,9 @@ class App extends Component {
   render() {
     return (
       <Wrapper className="App">
+        <Wrapper>
           <h1>@kaylanspell</h1>
+        </Wrapper>
       </Wrapper>
     );
   }
