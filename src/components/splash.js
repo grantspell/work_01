@@ -43,6 +43,17 @@ const Wrapper = styled.div`
         font-size: 2vw;
         letter-spacing: 50px;
     }
+
+    @media (max-width: 1100px) {
+        height: 100vh;
+        width: 100vw;
+
+        letter-spacing: 10px;
+        
+        p {
+            letter-spacing: 10px;
+        }
+    }
 `
 
 class Splash extends Component {
