@@ -28,14 +28,11 @@ const Wrapper = styled.div`
     letter-spacing: 37px;
     text-align: center;
     font-family: 'Rokkitt', serif;
+    animation: mymove 10s infinite;
 
     h1:hover {
         color: white;
     }
-
-    .blink-1{-webkit-animation:blink-1 .6s both;animation:blink-1 .6s both}
-   
-   @-webkit-keyframes blink-1{0%,50%,100%{opacity:1}25%,75%{opacity:0}}@keyframes blink-1{0%,50%,100%{opacity:1}25%,75%{opacity:0}}
 `
 
 class Splash extends Component {
@@ -52,7 +49,7 @@ class Splash extends Component {
     render() {
         return (
             <Wrapper>
-                <h1 className="blink-1" onMouseOver={this.hovered}>@kaylanspell</h1>
+                <h1 onMouseOver={this.hovered}>@kaylanspell</h1>
             </Wrapper>
         );
     }
