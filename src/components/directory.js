@@ -20,7 +20,6 @@ class Directory extends Component {
 
                 <Splash />
 
-                <FirstPage />
                 
             </Wrapper>
         );
@@ -28,3 +27,4 @@ class Directory extends Component {
 }
 
 export default Directory;
+{/* <FirstPage /> */}
