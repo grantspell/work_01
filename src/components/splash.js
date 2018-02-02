@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import styled from 'styled-components';
 
 // font-family: 'Anton', sans-serif;
@@ -20,7 +21,8 @@ const Wrapper = styled.div`
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     align-content: center;
     color: rgba(255, 255, 255, .7);
@@ -30,14 +32,35 @@ const Wrapper = styled.div`
     font-family: 'Rokkitt', serif;
     animation: mymove 10s infinite;
 
-    h1:hover {
+    a {
+        text-decoration: none;
+        color: rgba(255,255,255, .7);
+    }
+    a:hover {
         color: white;
+    }
+    p {
+        font-size: 2vw;
+        letter-spacing: 50px;
     }
 `
 
 class Splash extends Component {
     state = {
-        atHidden: false
+        atHidden: false,
+        time: {}
+    }
+
+    componentWillMount () {
+        this.getTime();
+    }
+
+    getTime = async () => {
+        const res = await axios.get('http://worldclockapi.com/api/json/est/now')
+        const timeData = res.data.currentDateTime
+        const time = timeData.substr(timeData.length - 5);
+        this.setState({ time: time })
+        console.log(this.state)
     }
 
     hovered = (e) => {
@@ -49,7 +72,8 @@ class Splash extends Component {
     render() {
         return (
             <Wrapper>
-                <h1 onMouseOver={this.hovered}>@kaylanspell</h1>
+                <h1 onMouseOver={this.hovered}><a href="http://www.instagram.com/kaylanspell/">@kaylanspell</a></h1>
+                <p>COMING SOON</p>
             </Wrapper>
         );
     }

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 
 // COMPONENTS
-import Splash from './components/splash'
+import Directory from './components/directory'
 
 // STYLES
 const Wrapper = styled.div`
@@ -17,7 +17,7 @@ class App extends Component {
       <Router>
         <Wrapper>
           <Switch>
-              <Route exact path="/" component={Splash} />
+              <Route exact path="/" component={Directory} />
             </Switch>
           </Wrapper>
         </Router>
