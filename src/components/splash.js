@@ -24,11 +24,9 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
     color: rgba(255, 255, 255, .7);
     font-size: 3vw;
     letter-spacing: 37px;
-    text-align: center;
     font-family: 'Rokkitt', serif;
     animation: mymove 10s infinite;
 
@@ -44,7 +42,7 @@ const Wrapper = styled.div`
         letter-spacing: 50px;
     }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 755px) {
         height: 100vh;
         width: 100vw;
 
