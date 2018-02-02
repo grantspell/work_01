@@ -49,7 +49,10 @@ const Wrapper = styled.div`
         width: 100vw;
 
         letter-spacing: 10px;
-        
+
+        h1 {
+            text-shadow: 0px -25px rgba(255, 255, 255, .75), 0px -50px rgba(255, 255, 255, .8), 0px -75px rgba(255, 255, 255, .85), 0px -100px rgba(255, 255, 255, .9), 0px -125px rgba(255, 255, 255, .95), 0px -150px rgba(255, 255, 255, 1.0), 0px -175px #fff, 0px -200px #fff, 0px -225px #fff, 0px -250px #fff, 0px -275px #fff, 0px -300px #fff, 0px -325px #fff, 0px -350px #fff, 0px -375px #fff, 0px -400px #fff ;
+        }
         p {
             letter-spacing: 10px;
         }
