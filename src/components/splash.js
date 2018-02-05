@@ -17,7 +17,7 @@ import styled from 'styled-components';
 
 // STYLES
 const Wrapper = styled.div`
-    background-color: rgba(246, 178, 128, .7);
+    background-color: rgba(246, 178, 128, .4);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -52,6 +52,10 @@ const Wrapper = styled.div`
             letter-spacing: 10px;
         }
     }
+    .URL {
+        letter-spacing: 10px;
+        font-size: 3vw;
+    }
 `
 
 class Splash extends Component {
@@ -82,7 +86,7 @@ class Splash extends Component {
         return (
             <Wrapper>
                 <h1 onMouseOver={this.hovered}><a href="http://www.instagram.com/kaylanspell/">@kaylanspell</a></h1>
-                <p>COMING SOON</p>
+                <p className="URL">kaylanspell.com</p>
             </Wrapper>
         );
     }
