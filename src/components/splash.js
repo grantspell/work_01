@@ -17,7 +17,7 @@ import styled from 'styled-components';
 
 // STYLES
 const Wrapper = styled.div`
-    background-color: #fdb39b;
+    background-color: rgba(246, 178, 128, .7);
     height: 100vh;
     width: 100vw;
     display: flex;
